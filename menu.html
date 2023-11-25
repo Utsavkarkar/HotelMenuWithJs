@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hotel menu</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="col-auto text-center mt-2 fs-2 heading">HOTEL MENU</div>
+		<div class="row mt-5">
+			<div class="col-8 ">
+				<h2 class="text-center m-2">Burgers</h2>
+				<div class="row first_row mt-3">
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/Burger.jpg" class="card-img-top" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Burger</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>200</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>3.9</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="200" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/hotdog.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">HotDog</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>100</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>3.5</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="100" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/vegburger.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Burger</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>50</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.6</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="50" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="text-center m-2">Pizza</h2>
+				<div class="row second_row mt-3">
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/braccoli_pizza.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Braccoli Pizza</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>300</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="300" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/meat_mashroom.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">MeatMashroom</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>400</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>3.6</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="400" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/cheese_pizza.webp" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Cheese Onion</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>200</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.5</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="200" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="text-center m-2">South-Indian</h2>
+				<div class="row third_row mt-3">
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/dosa.png" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Masala Dosa</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>200</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.6</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="200" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/idli.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Idli</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>100</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="100" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/uttapam.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Uttapam</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>120</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="120" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="text-center m-2">Chat</h2>
+				<div class="row forth_row mt-3">
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/papdichat.webp" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Papdi Chat</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>100</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="100" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/katorichat.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Katori Chat</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>150</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.7</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="150" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/dahipuri.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Dahi Puri</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>120</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="120" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="text-center m-2">Gujarat's Special</h2>
+				<div class="row fifth_row mt-3">
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/khaman.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Khaman Dhokla</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>100</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.9</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="100" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/thepla.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Thepla</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>130</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="130" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/phaphda_jalebi.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Phaphda Jalebi</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>200</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="200" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="text-center m-2">Thick-Shake</h2>
+				<div class="row sixth_row mt-3">
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/oreo_shake.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Oreo Shake</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>200</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="200" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/redvelvet.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Red Velvet</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>230</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="230" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/strawberry.jpg" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Straw Berry</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>190</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="190" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="text-center m-2">Ice-Cream</h2>
+				<div class="row seventh_row mt-3 mb-2">
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/tutti_fruti.webp" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Tutti Fruti</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>80</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="80" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/Eggnog.webp" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Eggnog Scoop</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>100</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="100" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card" style="width: 18rem;">
+  							<img src="images/cake_batter.webp" class="card-img-top se" alt="...">
+  							<div class="card-body d-flex justify-content-between align-items-end">
+    							<div class="details_card">
+    								<h5 class="card-title fw-bolder fs-3">Cake Batter</h5>
+   									<p class="card-text price"><i class="fa-solid fa-indian-rupee-sign">&nbsp;</i>90</p>
+   									<p class="card-text rate"><i class="fa-solid fa-star">&nbsp;</i>4.2</p>
+    							</div>
+    							<div class="checkbox_card">
+    								<input type="checkbox" name="" value="90" class="check" onchange="bill()">
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4 side_bill px-5">
+				<div class="details_of_bill ms-4 p-5 border">
+					<div class="total d-flex justify-content-between" >
+						<h4>Total :-</h4>
+						<h4 id="price"></h4>
+					</div><br><br>
+					<div class="gst d-flex justify-content-between" >
+						<h4>GST ( 18% ) :-</h4>
+						<h4 id="gst" class=""></h4>
+					</div><br><hr width="122.5%"><br>
+					<div class="total+gst d-flex justify-content-end" >
+						<h4 id="before_disc"></h4>
+					</div><br>
+					<div class="discount d-flex justify-content-between" >
+						<h4>Discount</h4>
+						<h4 id="disc_val">
+							<input id="dis" type="text" class="w-25 ms-5" name="" value="" onchange="bill()">
+							<h4 id="discount_value"></h4>
+						</h4>
+					</div><br><hr width="122.5%"><br>
+					<div class="grand_total d-flex justify-content-between">
+						<h4>Final Bill :-</h4>
+						<h4 id="final"></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="" src="js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.price{
+	font-weight: bold;
+	font-size: 20px;
+}
+input.check{
+	 width: 25px;
+     height: 25px;
+	margin-right: 18px;
+}
+.details_of_bill{
+	position: fixed;
+/*	width: 33%;*/
+}
+.se{
+	height: 214px;
+}
+.heading{
+	background-color: black;
+	color: white;
+}
+.card{
+	background-color: orange;
+}
+.card:hover{
+	box-shadow: 0 5px 10px rgb(126, 125, 125);
+	transition: 0.5s;
+}
